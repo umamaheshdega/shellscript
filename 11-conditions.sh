@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
 echo "ERROR:you must have sudo access to execute script"
 exit 1
@@ -23,7 +23,7 @@ else
 echo "mysql already installed"
 fi  
 
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then 
 echo "ERROR:YOU MUST HAVE SUDO ACCESS TO EXECUTE SCRIPT"
 exit 1
